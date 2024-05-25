@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); /* principal */
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Freehand&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); /* desenhada */
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Freehand&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap'); /* fonte cursiva */
+
+:root {
+    --cor-um: #f2cf08;
+    --cor-dois: #f58d17;
+    --cor-tres: #B8860B;
+    --cor-quatro: #fff9d6;
+    --cor-cinco:  #251b03;
+
+    --fonte-um: "Open Sans", sans-serif;
+    --fonte-dois: "Annie Use Your Telescope", cursive;
+    --fonte-tres: "Satisfy", cursive;
+}
+
+[data-theme="dark"] {
+    --cor-um: #f2cf08;
+    --cor-dois: #eb8509;
+    --cor-tres: #B8860B;
+    --cor-quatro: #251b03;
+    --cor-cinco:  #fffbe7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-um);
+    background: var(--cor-quatro);
+    color: var(--cor-cinco);
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 0.1vh;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--cor-um);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cor-dois);
+}
+::-webkit-scrollbar-horizontal {
+    height: 1px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CABECALHO */
+/* DARKMODE */
+.dark-mode-but {
+    position: absolute;
+    display: flex;
+    top: 3em;
+    left: 6em;
+    z-index: 2;
+}
+
+.dark_chk {
+    display: none;
+    right: 11rem;
+    width: 5rem;
+    height: 2rem;
+    z-index: 50;
+    cursor: pointer;
+}
+
+.dark_label {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    border-radius: 50rem;
+    background-color: var(--cor-cinco);
+    height: 2rem;
+    width: 4rem;
+    transition: 0.5s;
+    box-shadow: inset 0 1px 5px var(--cor-um);
+}
+.dark-ball {
+    background-color: var(--cor-um);
+    border-radius: 50em;
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    top: 0;
+    right: 4rem;
+    scale:0.8;
+    cursor: pointer;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+.dark_chk:checked ~ .dark-ball {
+    transform: translateX(2.3rem);
+}  
+
+/* PAGINA */
+.page {
+    position: relative;
+    height: 90vh;
+    width: 90vw;
+    background: var(--cor-quatro);
+    box-shadow: 0px 0px 4px var(--cor-cinco), 0 0 4px var(--cor-cinco);
+    overflow: hidden;
+}
+
+/* LADO ESQUERDO */
+.left {
+    width: 70%;
+    height: 100%;
+}
+
+/* BANNER */
+.banner {
+    width: 100%;
+    height: 33%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    position: absolute;
+    font-family: var(--fonte-um);
+    font-size: 8vw;
+    color: var(--cor-um);
+}
+
+.banner span {
+    position: absolute;
+    font-family: var(--fonte-tres);
+    font-size: 2vw;
+    transform: scaleX(7) scaleY(1);
+    color: var(--cor-tres);
+    opacity: 0.5;
+    margin-top: 1em;
+}
+/* LOGOS */
+.logos {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_box:nth-of-type(1) {
+    background: var(--cor-um);
+}
+
+.logo_box:nth-of-type(2) {
+    background: var(--cor-tres);
+}
+
+.logo_box:nth-of-type(3) {
+    background: var(--cor-dois);
+}
+
+.logo_svg {
+    height: 80%;
+    width: 80%;
+}
+
+/* CORES */
+.color {
+    position: absolute;
+    height: 10%;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -2%;
+    z-index: 1;
+}
+
+.color_ball {
+    border-radius: 50%;
+    padding: 3%;
+}
+
+.color_ball:nth-last-child(1) {
+    background: var(--cor-cinco);
+    border: 4px solid var(--cor-quatro);
+}
+.color_ball:nth-last-child(2) {
+    background: var(--cor-quatro);
+    border: 4px solid var(--cor-cinco);
+}
+.color_ball:nth-last-child(3) {
+    background: var(--cor-tres);
+    border: 4px solid var(--cor-um);
+}
+.color_ball:nth-last-child(4) {
+    background: var(--cor-dois);
+    border: 4px solid var(--cor-tres);
+}
+.color_ball:nth-last-child(5) {
+    background: var(--cor-um);
+    border: 4px solid var(--cor-dois);
+}
+
+/* FINAL */
+
+/* fontes */
+.fontes {
+    width: 100%;
+    height: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.end_box {
+    height: 100%;
+    width: 100%;
+}
+.end_box:nth-of-type(1) {
+    padding: 2em 0 1em;
+}
+.fonte_box {
+    height: 33.33%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fonte_box h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.fonte_box:nth-of-type(2) {
+    font-family: var(--fonte-dois);
+}
+.fonte_box:nth-of-type(3) {
+    font-family: var(--fonte-tres);
+}
+
+.fonte_box p {
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.stamp {
+    position: absolute;
+    background-color: var(--cor-um);
+    border-radius: 50%;
+    height: 7em;
+    width: 7em;
+}
+
+/* imagem */
+.end_box:nth-last-child(1) {
+    background: var(--cor-dois);
+}
+
+/* LADO DIREITO */
+.right {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+/* Banner */
+.logo_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cor-tres);
+    height: 70%;
+    
+}
+
+.banner_logo_svg {
+    height: 60%;
+    width: 60%;
+}
+
+/* melgis nome */
+.melgis_nome {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    background: var(--cor-cinco);
+}
+
+.melgis_nome .melgis_nome_box span {
+    color: var(--cor-quatro);
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+
+.melgis_nome_box:nth-last-child(2) {
+    font-family: var(--fonte-dois);
+}
+.melgis_nome_box:nth-last-child(1) {
+    font-family: var(--fonte-tres);
+}
+
+@media screen and (max-width:1024px) {
+    /* CABECALHO */
+    /* DARKMODE */
+.dark-mode-but {
+    top: 3em;
+    left: 3em;
+}
+
+/* LADO ESQUERDO */
+.left {
+    width: 100%;
+    height: 100%;
+}
+
+/* BANNER */
+.banner {
+    width: 100%;
+    height: 25%;
+}
+
+.banner h1 {
+    font-size: 10vw;
+}
+
+.banner span {
+    font-size: 3vw;
+}
+/* LOGOS */
+.logos {
+    width: 100%;
+    height: 20%;
+}
+.logo_svg {
+    height: 80%;
+    width: 80%;
+}
+
+/* CORES */
+.color {
+    height: 10%;
+    width: 100%;
+    margin-top: -7%;
+}
+
+.color_ball {
+    padding: 5%;
+}
+/* FINAL */
+
+/* fontes */
+.fontes {
+    width: 100%;
+    height: 28%;
+}
+.end_box:nth-of-type(1) {
+    padding: 3vh 0 1em;
+}
+.fonte_box h2 {
+    font-size: 1rem;
+}
+.stamp {
+    position: absolute;
+    background-color: var(--cor-um);
+    border-radius: 50%;
+    height: 7em;
+    width: 7em;
+}
+/* LADO DIREITO */
+.right {
+    transform: rotate(90deg);
+    width: 40%;
+    height: 80%;
+    top: 42vh;
+    right: 0;
+    left: 27vw;
+}
+/* Banner */
+.logo_banner {
+    height: 100%;
+}
+
+/* melgis nome */
+.melgis_nome {
+    display: none;
+}
+}
+
+@media screen and (max-width:1024px) {
+    /* CABECALHO */
+    /* DARKMODE */
+.dark-mode-but {
+    top: 1em;
+    left: 1em;
+    scale: 0.8;
+}
+/* PAGINA */
+.page {
+    overflow: scroll;
+}
+/* BANNER */
+.banner {
+    width: 100%;
+    height: 20%;
+}
+/* LOGOS */
+.logos {
+    width: 100%;
+    height: 20%;
+    margin-top: 36vh;
+    flex-direction: column;
+}
+.logo_svg {
+    height: 80%;
+    width: 80%;
+}
+
+.logo_box {
+    width: 100%;
+    height: 30vh;
+}
+/* CORES */
+.color {
+    height: 10%;
+    width: 100%;
+    margin-top: 31vh;
+}
+/* FINAL */
+/* fontes */
+.fontes {
+    margin-top: 17em;
+    width: 100%;
+    height: 90vh;
+    flex-direction: column;
+}
+.end_box:nth-of-type(1) {
+    padding: 3vh 0 1em;
+}
+.fonte_box h2 {
+    font-size: 1rem;
+}
+
+.stamp {
+    position: absolute;
+    margin-top: 90vh;
+    background-color: var(--cor-um);
+    border-radius: 50%;
+    height: 7em;
+    width: 7em;
+}
+/* LADO DIREITO */
+.right {
+    transform: rotate(90deg);
+    width: 40%;
+    height: 80%;
+    top: 190vh;
+    right: 0;
+    left: 27vw;
+}
+}

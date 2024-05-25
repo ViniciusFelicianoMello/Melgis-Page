@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFCE00;stroke-width:15;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#F6D723;stroke-width:15;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#F7D823;stroke-width:15;stroke-miterlimit:10;}
+	.st3{fill:#F6D723;stroke:#F6D723;stroke-miterlimit:10;}
+</style>
+<polyline class="st0" points="160.95,304.91 86.62,304.91 86.62,386.62 190.28,386.62 190.43,460.4 51.79,460.4 51.64,62.11 
+	256,468.06 460.66,62.11 460.8,305 460.88,460.5 321.48,460.5 321.22,386.39 432.96,386.39 "/>
+<line class="st1" x1="351" y1="305.47" x2="460.67" y2="305.47"/>
+<line class="st2" x1="256" y1="468.06" x2="256" y2="68.06"/>
+<circle class="st3" cx="256" cy="43.04" r="8.17"/>
+</svg>
