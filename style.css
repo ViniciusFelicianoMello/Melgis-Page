@@ -275,8 +275,6 @@ body {
 
 .stamp {
     position: absolute;
-    background-color: var(--cor-um);
-    border-radius: 50%;
     height: 7em;
     width: 7em;
 }
@@ -395,13 +393,6 @@ body {
 .fonte_box h2 {
     font-size: 1rem;
 }
-.stamp {
-    position: absolute;
-    background-color: var(--cor-um);
-    border-radius: 50%;
-    height: 7em;
-    width: 7em;
-}
 /* LADO DIREITO */
 .right {
     transform: rotate(90deg);
@@ -479,8 +470,6 @@ body {
 .stamp {
     position: absolute;
     margin-top: 90vh;
-    background-color: var(--cor-um);
-    border-radius: 50%;
     height: 7em;
     width: 7em;
 }
