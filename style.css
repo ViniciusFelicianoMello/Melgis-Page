@@ -7,7 +7,8 @@
     --cor-dois: #f58d17;
     --cor-tres: #B8860B;
     --cor-quatro: #fff9d6;
-    --cor-cinco:  #251b03;
+    --cor-cinco:  #2b0d05;
+    --cor-seis:  #682914;
 
     --fonte-um: "Open Sans", sans-serif;
     --fonte-dois: "Annie Use Your Telescope", cursive;
@@ -18,8 +19,9 @@
     --cor-um: #f2cf08;
     --cor-dois: #eb8509;
     --cor-tres: #B8860B;
-    --cor-quatro: #251b03;
+    --cor-quatro: #2b0d05;
     --cor-cinco:  #fffbe7;
+    --cor-seis:  #682914;
 }
 
 * {
@@ -211,16 +213,20 @@ body {
     border: 4px solid var(--cor-cinco);
 }
 .color_ball:nth-last-child(3) {
-    background: var(--cor-tres);
-    border: 4px solid var(--cor-um);
+    background: var(--cor-seis);
+    border: 4px solid var(--cor-quatro);
 }
 .color_ball:nth-last-child(4) {
-    background: var(--cor-dois);
-    border: 4px solid var(--cor-tres);
+    background: var(--cor-tres);
+    border: 4px solid var(--cor-quatro);
 }
 .color_ball:nth-last-child(5) {
+    background: var(--cor-dois);
+    border: 4px solid var(--cor-quatro);
+}
+.color_ball:nth-last-child(6) {
     background: var(--cor-um);
-    border: 4px solid var(--cor-dois);
+    border: 4px solid var(--cor-quatro);
 }
 
 /* FINAL */
